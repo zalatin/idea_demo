@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class CalculatorTest {
     @Test
-    public void shouldReturn2When1Plus1() {
+    public void shouldReturn2When1Plus1() throws IllegalAccessException {
         Calculator calculator = new Calculator();
         int actualResult = calculator.compute(1, 1, '+');
         int expectResult = 2;
@@ -13,7 +13,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void shouldReturn0When1Sub1() {
+    public void shouldReturn0When1Sub1() throws IllegalAccessException {
         Calculator calculator = new Calculator();
         int actualResult = calculator.compute(1, 1, '-');
         int expectResult = 0;
